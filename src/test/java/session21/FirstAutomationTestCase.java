@@ -24,13 +24,13 @@ public class FirstAutomationTestCase {
 		
 		//2) open url:
 		
-	driver.get("https://www.youtube.com/");
+	driver.get("https://www.demoblaze.com/");
 	
 	//3) validate title
 	
 	String act_title=driver.getTitle();
 	
-	if(act_title.equals("YouTube"))
+	if(act_title.equals("STORE"))
 	{
 		System.out.println("Test passed");
 	}
@@ -41,7 +41,7 @@ public class FirstAutomationTestCase {
 	
 	//4) close browser
 	
-	driver.close();
+	driver.quit();
 	
 	
 	
