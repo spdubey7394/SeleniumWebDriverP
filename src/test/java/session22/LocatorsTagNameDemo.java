@@ -17,7 +17,7 @@ WebDriver driver=new ChromeDriver();
 		//to count the no of link in the navigation bar and need to import util.List
 		//findElements since there are group of elements
 		
-		List<WebElement> allinks=driver.findElements(By.tagName(""));
+		List<WebElement> allinks=driver.findElements(By.tagName("j"));
 		
 		//webElement is datatype for list elements
 		

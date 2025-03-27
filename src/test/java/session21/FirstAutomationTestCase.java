@@ -24,7 +24,7 @@ public class FirstAutomationTestCase {
 		
 		//2) open url:
 		
-	driver.get("https://www.demoblaze.com/");
+	driver.get("https://demo.nopcommerce.com/");
 	
 	//3) validate title
 	
@@ -39,9 +39,10 @@ public class FirstAutomationTestCase {
 		System.out.println("Test failed");
 	}
 	
+	
 	//4) close browser
 	
-	driver.quit();
+ 	driver.quit();
 	
 	
 	
