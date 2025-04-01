@@ -15,7 +15,7 @@ public class XpathDemo {
 		
 		driver.manage().window().maximize();
 		
-		/* xpath using single attribute
+		// xpath using single attribute
 		
 		 driver.findElement(By.xpath("//input[@id='small-searchterms']")).sendKeys("checkxpath");
 		
@@ -23,13 +23,11 @@ public class XpathDemo {
 		
 	//driver.findElement(By.xpath("//*[@id='small-searchterms']")).sendKeys("checkxpath2"); */
 	
-	/* xpath using multiple attribute
 	
-	driver.findElement(By.xpath("//input[@id='newsletter-email'][@placeholder='Enter your email here...']")).sendKeys("sprakash07031994@gmail.com");
-
-	driver.findElement(By.xpath("//button[@id='newsletter-subscribe-button']")).click();  */
 		
-	//	xpath using AND OR operators:
+
+		
+		
 			
 			
 		
