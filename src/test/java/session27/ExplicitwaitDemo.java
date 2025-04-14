@@ -3,6 +3,7 @@ import java.time.Duration;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.*;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -11,7 +12,7 @@ public class ExplicitwaitDemo
 
 	public static void main(String[] args) throws InterruptedException 
 	{
-		WebDriver driver=new ChromeDriver();
+		WebDriver driver=new EdgeDriver();
 		driver.manage().window().maximize();
 		
 		// Step -1: Declaration of explicit wait using webdriver wait class
@@ -39,7 +40,7 @@ public class ExplicitwaitDemo
 	logout.click();
 	
 	
-	driver.quit();
+	//driver.quit();
 		
 	}
 
