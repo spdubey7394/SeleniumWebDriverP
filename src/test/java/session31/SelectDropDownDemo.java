@@ -46,6 +46,12 @@ public class SelectDropDownDemo {
 					System.out.println(options.get(i).getText());
 				}
 		
+		// using enhanced loop
+				
+				for(WebElement op:options)
+				{
+					System.out.println(op.getText());
+				}
 	}
 
 }
