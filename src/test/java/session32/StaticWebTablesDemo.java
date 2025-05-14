@@ -1,5 +1,6 @@
 package session32;
 import java.time.Duration;
+import java.util.*;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.*;
@@ -41,7 +42,33 @@ public class StaticWebTablesDemo {
 			System.out.println();
 		}
 		
+		//print book name whose author is Amit
 		
+		for(int i=2;i<=rows;i++)
+		{
+			String authorName=driver.findElement(By.xpath("//table[@name='BookTable']//tr["+i+"]//td[2]")).getText();
+		//	System.out.println(authorName);
+			
+			if(authorName.equals("Amit"))
+			{
+			String Bookname=driver.findElement(By.xpath("//table[@name='BookTable']//tr["+i+"]//td[1]")).getText();
+			System.out.println(Bookname + "\t" + authorName);
+			}
+			
+			
+			
+		}
+		
+		//to add all the price
+		int totall=0;
+		for(int j=2;j<=rows;j++)
+		{	
+		String price=driver.findElement(By.xpath("//table[@name='BookTable']//tr["+j+"]//td[4]")).getText();
+		System.out.println(price);
+		
+		totall=totall + Integer.parseInt(price);
+		System.out.println(totall);
+		}
 		
 		
 	}
