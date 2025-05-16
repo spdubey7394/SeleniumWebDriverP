@@ -43,7 +43,7 @@ public class BasicDatePickerUsingDatePicker {
 				break;
 			}
 			
-			//click on back button on date picker
+			//click on arrow button on date picker
 		
 		 driver.findElement(By.xpath("//span[@class='ui-icon ui-icon-circle-triangle-e']")).click(); //forward
 		// driver.findElement(By.xpath("//span[@class='ui-icon ui-icon-circle-triangle-w']")).click(); //backward
